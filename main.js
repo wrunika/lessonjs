@@ -23,7 +23,10 @@ const bigGame = (min, max, attempts, randomNum, player) => {
     `Привет, ${player}! Я загадал число в диапазоне от ${min} до ${max}. У тебя есть ${attempts} попыток, чтобы отгадать его. Если готов, жми на ОК.`
   );
   for (let i = 1; i <= attempts; i++) {
-    const answer = prompt(`Вводи свой вариант цифры.`, `Введи же число.`);
+    const answer = prompt(
+      `Вводи свой вариант цифры.`,
+      `Введи свое число сюда.`
+    );
     if (answer < randomNum) {
       alert(
         `Я загадал большее число. У тебя осталось ${attempts - i} попыток.`
